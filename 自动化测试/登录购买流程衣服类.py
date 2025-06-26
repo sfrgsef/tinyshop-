@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-username = "19710115706@qq.com"
+username = "1956053672@qq.com"
 password = "123123"
 goumailiang = int(1) #购买量
 shangpinming = "夏天职业衬衫女装正装短袖衬衫工装女寸衫韩版白领工作服白衬衣女"
