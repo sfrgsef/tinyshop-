@@ -41,7 +41,6 @@ def setup_driver():
 def run():
     driver = setup_driver()
     try:
-
         url = "http://localhost:808/Tinyshop/"
         driver.get(url)
         print(f"成功打开网页: {url}")
@@ -53,6 +52,19 @@ def run():
         driver.find_element(By.NAME, "password").send_keys(password)
         driver.find_element(By.XPATH, "//*[@id=\"main\"]/div/div/form/ul/li[4]/button").click()
 
+        driver.find_element(By.LINK_TEXT,"BRIOSO格子衬衫 女 长袖2014春装新款女装修身韩版大码百搭衬衣潮").click()
+
+
+
+
+        driver.find_element(By.CLASS_NAME, 'icon-cart-32').click()
+        driver.find_element(By.LINK_TEXT, '去购物车结算').click()
+
+        ul_elements = driver.find_elements(By.CLASS_NAME, 'buy_num')
+        print(ul_elements)
+
+        time.sleep(5)
+        """
         WebDriverWait(driver, 3).until(
             EC.element_to_be_clickable(
                 (By.XPATH, '//a[contains(text(), "会员中心") and @href="/Tinyshop/index.php?con=ucenter&act=index"]'))
@@ -69,8 +81,8 @@ def run():
         )
         text_content = element.text
         print(text_content)
+        """
 
-        time.sleep(10)
     except Exception as e:
         print(f"测试过程出现错误: {str(e)}")
     finally:
