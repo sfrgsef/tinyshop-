@@ -20,7 +20,7 @@ class goodsPage:
         elem = wait_p_element(self.driver, By.LINK_TEXT, title)
         elem.click()
 
-    def find_existing_spec_ids(self, min_id=1, max_id=6):
+    def find_existing_spec_ids(self, min_id=1, max_id=8):
         """
         优化：一次性查找所有ul.spec-values，减少Selenium查找次数
         """
@@ -58,9 +58,20 @@ class goodsPage:
                 click_num += 1
         print(f"<UNK>{click_num}<UNK>")
         return click_num
+
     def to_goods_page(self):
+        # 先向上滚动页面
+        self.driver.execute_script("window.scrollTo(0, 0);")
+        # 再向下滚动页面
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        # 点击购物车图标
         self.driver.find_element(By.CLASS_NAME, 'icon-cart-32').click()
-        self.driver.find_element(By.LINK_TEXT, '去购物车结算').click()
+        wait_p_element(self.driver,By.LINK_TEXT, '去购物车结算').click()
+        # 先向上滚动页面
+        self.driver.execute_script("window.scrollTo(0, 0);")
+        # 再向下滚动页面
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
         # 获取所有name='buy_num'的input元素，累加其value
         input_elements = self.driver.find_elements(By.NAME, 'buy_num')
         total = 0

@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd6e41e-56e7-49ad-a0e2-81dc948323e4" name="更改" comment="main2" />
+    <list default="true" id="cdd6e41e-56e7-49ad-a0e2-81dc948323e4" name="更改" comment="main2">
+      <change afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/.idea/tinyshop商品加入购物车自动化框架.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/流程测试/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/流程测试/.idea/流程测试.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/data/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/data/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages/buy_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages/buy_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/testcases/test_buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/testcases/test_buy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/流程测试/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/流程测试/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +44,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/tinyshop-" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -40,7 +55,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sfrgsef/text.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/sfrgsef/tinyshop-.git&quot;,
     &quot;accountId&quot;: &quot;92afec5a-2eef-4c1e-a075-364491acfa74&quot;
   }
 }</component>
@@ -54,20 +69,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript 调试.ff71fa45-1787-4c1d-8257-fac43905a06a-attachment.html.executor": "Run",
+    "JavaScript 调试.index.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.buy_page.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.run_tests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/githubck",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/githubck/tinyshop商品加入购物车自动化框架/reports/allure-report/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript 调试.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,7 +118,13 @@
       <workItem from="1749350502260" duration="2200000" />
       <workItem from="1750863197756" duration="9000" />
       <workItem from="1751461350854" duration="1770000" />
-      <workItem from="1751463314860" duration="380000" />
+      <workItem from="1751463314860" duration="1122000" />
+      <workItem from="1751465204013" duration="627000" />
+      <workItem from="1751507171869" duration="310000" />
+      <workItem from="1751507490899" duration="818000" />
+      <workItem from="1751595317261" duration="2437000" />
+      <workItem from="1751597765352" duration="1362000" />
+      <workItem from="1751599522463" duration="4653000" />
     </task>
     <task id="LOCAL-00001" summary="已更改">
       <option name="closed" value="true" />
@@ -182,6 +218,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="main2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/githubck$main.coverage" NAME="main 覆盖结果" MODIFIED="1751463383796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyshop登录自动化框架" />
+    <SUITE FILE_PATH="coverage/githubck$main.coverage" NAME="main 覆盖结果" MODIFIED="1751598241723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架" />
+    <SUITE FILE_PATH="coverage/githubck$run_tests.coverage" NAME="run_tests 覆盖结果" MODIFIED="1751605594642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架" />
+    <SUITE FILE_PATH="coverage/githubck$buy_page.coverage" NAME="buy_page 覆盖结果" MODIFIED="1751604808189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages" />
   </component>
 </project>
