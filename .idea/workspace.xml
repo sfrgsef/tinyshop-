@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd6e41e-56e7-49ad-a0e2-81dc948323e4" name="更改" comment="main2">
-      <change afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/.idea/tinyshop商品加入购物车自动化框架.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/流程测试/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/流程测试/.idea/流程测试.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/data/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/data/test_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages/buy_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages/buy_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/testcases/test_buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/testcases/test_buy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/流程测试/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/流程测试/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/error_screenshot.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +112,7 @@
       <workItem from="1751507490899" duration="818000" />
       <workItem from="1751595317261" duration="2437000" />
       <workItem from="1751597765352" duration="1362000" />
-      <workItem from="1751599522463" duration="4653000" />
+      <workItem from="1751599522463" duration="5832000" />
     </task>
     <task id="LOCAL-00001" summary="已更改">
       <option name="closed" value="true" />
