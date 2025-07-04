@@ -43,7 +43,11 @@ def run_tests():
             f"--log-file={log_file}",
             "--log-file-level=INFO"
         ]
-        
+        # 清空目录（确保目录存在且为空）
+        if os.path.exists(allure_results_dir):
+            shutil.rmtree(allure_results_dir)
+        os.makedirs(allure_results_dir, exist_ok=True)
+
         result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8')
         
         # 打印测试输出
