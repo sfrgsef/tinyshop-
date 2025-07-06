@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd6e41e-56e7-49ad-a0e2-81dc948323e4" name="更改" comment="main2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/data/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/data/test_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages/buy_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pages/buy_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/testcases/test_buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/testcases/test_buy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/utlis/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tinyshop商品加入购物车自动化框架/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop注册自动化框架/.idea/dictionaries/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop注册自动化框架/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop注册自动化框架/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop注册自动化框架/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop注册自动化框架/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinyshop注册自动化框架/.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="cdd6e41e-56e7-49ad-a0e2-81dc948323e4" name="更改" comment="main2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,6 +144,7 @@
       <workItem from="1751684793633" duration="3345000" />
       <workItem from="1751781590090" duration="880000" />
       <workItem from="1751782497091" duration="8264000" />
+      <workItem from="1751796965291" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="已更改">
       <option name="closed" value="true" />
