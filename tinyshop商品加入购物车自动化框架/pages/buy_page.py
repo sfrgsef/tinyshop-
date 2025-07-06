@@ -1,8 +1,6 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 from utlis.helper import wait_p_element,wait_v_element
-from data.test_data import *
 
 
 class goodsPage:
@@ -35,29 +33,51 @@ class goodsPage:
                     print(f"找到spec_id={spec_id_int}的商品规格")
         return found_spec_ids
 
-    def add_all_color_size_to_cart(self, color_spec_id=2, size_spec_id=6):
+    def add_all_color_size_to_cart(self, found_spec_ids):
         """
-        遍历所有颜色和尺码组合，依次点击并加入购物车
-        :param color_spec_id: 颜色的spec_id
-        :param size_spec_id: 尺码的spec_id
+        遍历所有组合，依次点击并加入购物车
+        :param found_spec_ids: 包含所有类型的spec_id
         """
-        color_ul = self.driver.find_element(By.CSS_SELECTOR, f'ul.spec-values[spec_id="{color_spec_id}"]')
-        size_ul = self.driver.find_element(By.CSS_SELECTOR, f'ul.spec-values[spec_id="{size_spec_id}"]')
-        color_lis = color_ul.find_elements(By.TAG_NAME, 'li')
-        size_lis = size_ul.find_elements(By.TAG_NAME, 'li')
-        click_num = 0
-        for color_li in color_lis:
-            color_text = color_li.text
-            color_li.click()
-            for size_li in size_lis:
-                size_text = size_li.text
-                size_li.click()
-                print(f"选择颜色: {color_text}, 尺码: {size_text}，点击加入购物车")
+        all_lis = []
+        for spec_ids in found_spec_ids:
+            element_ul = self.driver.find_element(By.CSS_SELECTOR, f'ul.spec-values[spec_id="{spec_ids}"]')
+
+            element_li = element_ul.find_elements(By.CSS_SELECTOR, 'li')
+            all_lis.append(element_li)
+            print(all_lis)
+        success_count = self.click_all_lis(all_lis, 0, [])
+        print(f"共成功添加 {success_count} 种组合")
+        return success_count
+
+    def click_all_lis(self, all_lis, click_lis, select_lis):
+        """
+           递归点击所有规格组合
+           :param all_lis: 所有规格类型的选项列表
+           :param click_lis: 当前处理的规格类型层级
+           :param select_lis: 已选择的路径
+        """
+
+        if click_lis == len(all_lis):
+            try:
+                for element in select_lis:
+                    if 'selected' not in element.get_attribute('class'):
+                        element.click()
+
                 add_btn = self.driver.find_element(By.ID, 'add-cart')
                 add_btn.click()
-                click_num += 1
-        print(f"<UNK>{click_num}<UNK>")
-        return click_num
+                return 1
+            except Exception as e:
+                print(e)
+                return 0
+        else:
+            count = 0
+            for option in all_lis[click_lis]:
+                if 'disabled' in option.get_attribute('class'):
+                    continue
+                new_path = select_lis.copy()
+                new_path.append(option)
+                count += self.click_all_lis(all_lis,click_lis+1,new_path)
+            return count
 
     def to_goods_page(self):
         # 先向上滚动页面

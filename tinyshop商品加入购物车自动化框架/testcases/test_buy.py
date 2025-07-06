@@ -39,12 +39,12 @@ def test_valid_cases(driver, title, should_pass):
             logger.info(f"进入商品详情页: {title}")
             goods = goodsPage(driver)
             goods.open(title)
-            goods.find_existing_spec_ids()
-        
+            found_spec_ids = goods.find_existing_spec_ids()
+
         # 依次添加到购物车
         with allure.step("添加商品到购物车"):
             logger.info("开始添加商品到购物车")
-            click_num = goods.add_all_color_size_to_cart()
+            click_num = goods.add_all_color_size_to_cart(found_spec_ids)
             logger.info(f"点击加入购物车次数: {click_num}")
         
         with allure.step("验证购物车商品数量"):
