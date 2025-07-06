@@ -7,6 +7,7 @@ def driver():
     提供每个用例独立的 selenium webdriver 实例，测试结束后自动关闭
     """
     options = webdriver.ChromeOptions()
+    
     options.add_argument('--disable-blink-features=AutomationControlled')  # 隐藏自动化标识
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
