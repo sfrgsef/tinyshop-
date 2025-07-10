@@ -37,7 +37,7 @@ def run_tests():
         cmd = [
             sys.executable, "-m", "pytest",
             "--alluredir", allure_results_dir,
-            "-v",
+            "-vs",
             "--tb=short",
             "--capture=tee-sys",
             f"--log-file={log_file}",

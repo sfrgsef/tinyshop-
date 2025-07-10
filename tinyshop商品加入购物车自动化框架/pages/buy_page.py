@@ -41,7 +41,6 @@ class goodsPage:
         all_lis = []
         for spec_ids in found_spec_ids:
             element_ul = self.driver.find_element(By.CSS_SELECTOR, f'ul.spec-values[spec_id="{spec_ids}"]')
-
             element_li = element_ul.find_elements(By.CSS_SELECTOR, 'li')
             all_lis.append(element_li)
             print(all_lis)
@@ -56,12 +55,14 @@ class goodsPage:
            :param click_lis: 当前处理的规格类型层级
            :param select_lis: 已选择的路径
         """
-
         if click_lis == len(all_lis):
             try:
                 for element in select_lis:
-                    if 'selected' not in element.get_attribute('class'):
-                        element.click()
+                    if 'selected' in element.get_attribute('class'):
+                        continue
+                    if 'disabled' in element.get_attribute('class'):
+                        continue
+                    element.click()
 
                 add_btn = self.driver.find_element(By.ID, 'add-cart')
                 add_btn.click()
