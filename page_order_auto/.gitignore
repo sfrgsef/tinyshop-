@@ -1,0 +1,17 @@
+../*
+# 忽略IDE配置目录
+.idea/
+*.iml  # 忽略IDE生成的模块文件（如 page_order_auto.iml）
+# Python 虚拟环境
+venv/
+env/
+*.env
+
+# 编译文件和缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 测试报告或日志
+reports/
+logs/
