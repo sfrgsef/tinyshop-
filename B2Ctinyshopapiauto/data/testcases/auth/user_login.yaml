@@ -1,0 +1,32 @@
+- name: "用户登录"
+  description: "使用用户名和密码登录，提取token"
+  request:
+    url: "/api/user/login"
+    method: "POST"
+    json:
+      accounts: "{{config.test_account.username}}"
+      pwd: "{{config.test_account.password}}"
+      type: "username"
+      verify: ""
+  validate:
+    - eq: [code, 0]
+    - eq: [msg, "登录成功"]
+    - exists: data
+    - exists: data.token
+  extract:
+    user_token: "$.data.token"
+    user_id: "$.data.id"
+    username: "$.data.username"
+
+- name: "用户登录失败"
+  description: "使用用户名和密码登录，提取token"
+  request:
+    url: "/api/user/login"
+    method: "POST"
+    json:
+      accounts: "111"
+      pwd: "111"
+      type: "username"
+      verify: "1"
+  validate:
+    - eq: [code, -1]

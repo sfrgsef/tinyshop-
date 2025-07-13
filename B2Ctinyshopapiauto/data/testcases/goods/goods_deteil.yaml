@@ -1,0 +1,18 @@
+- name: "商品详情"
+  description: "商品详情"
+  request:
+    url: "api/goods/detail"
+    method: "POST"
+    params: {
+      application: web,
+      application_client_type: pc,
+      token: "{{token}}"
+    }
+    json:
+      goods_id: "12"
+  validate:
+    - eq: [code, 0]
+    - eq: [msg, "success"]
+    - exists: data
+  extract:
+    goods: $.data.goods

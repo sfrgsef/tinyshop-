@@ -1,0 +1,14 @@
+base_url: "http://shop-xo.hctestedu.com/index.php"
+admin_url: "http://shop-xo.hctestedu.com/admin.php"
+common_params:
+  application: "app"
+  application_client_type: "weixin"
+  ajax: "ajax"
+log_level: "DEBUG"
+test_account:
+  username: "huace_tester"
+  password: "huace_tester"
+allure:
+  report_dir: "reports/allure"
+  #clean_history: true
+token_storage: "session"  # session | file | db

@@ -1,0 +1,20 @@
+- name: "搜索商品搜索初始化"
+  description: "搜索商品列表，使用默认参数"
+  request:
+    url: "/api/search/index"
+    method: "POST"
+    params: {
+      application: web,
+      application_client_type: pc
+    }
+    json:
+      wd: ""
+      page: 1
+      category_id: 0
+      brand_id: 0
+  validate:
+    - eq: [code, 0]
+    - eq: [msg, "success"]
+    - exists: data
+  extract:
+    total_count: $.data.search_map_info
